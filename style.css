@@ -1,0 +1,54 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #ff6600;
+}
+
+.item {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
