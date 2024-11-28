@@ -1,52 +1,46 @@
-export default function Widget() {
-    return (
-        <!DOCTYPE html>
-        <html lang="pt-BR">
-        <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Lanchonete do Abner</title>
-          <link rel="stylesheet" href="styles.css">
-        </head>
-        <body className="bg-background text-foreground">
-          <header className="bg-red-600 text-white text-3xl p-4 text-center">
-            LANCHONETE DO ABNER
-          </header>
-          
-          <div className="flex">
-            <aside className="bg-red-500 text-white w-1/4 p-4">
-              <p>Fale conosco - (81)91234-5678 📱</p>
-              <nav className="mt-4">
-                <a href="#" className="block py-2 border-b border-zinc-300">Carrinho de compras</a>
-                <a href="#" className="block py-2">Pedidos</a>
-              </nav>
-              <p className="mt-4">Rua das Flores, 123 - Centro, Cidade</p>
-            </aside>
-            
-            <main className="bg-yellow-200 flex-1 p-4 grid grid-cols-2 gap-4">
-              <div className="border border-zinc-300 p-2 text-center">
-                <img src="https://placehold.co/200x150.png?text=Hamburguer" alt="Hamburguer">
-                <p>Hamburguer - R$ 10,00</p>
-                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-              </div>
-              <div className="border border-zinc-300 p-2 text-center">
-                <img src="https://placehold.co/200x150.png?text=Sopa+de+Feijao" alt="Sopa de Feijão">
-                <p>Sopa de Feijão - R$ 8,00</p>
-                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-              </div>
-              <div className="border border-zinc-300 p-2 text-center">
-                <img src="https://placehold.co/200x150.png?text=Coxinha" alt="Coxinha">
-                <p>Coxinha - R$ 5,00</p>
-                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-              </div>
-              <div className="border border-zinc-300 p-2 text-center">
-                <img src="https://placehold.co/200x150.png?text=Refrigerante" alt="Refrigerante">
-                <p>Refrigerante - R$ 5,00</p>
-                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-              </div>
-            </main>
-          </div>
-        </body>
-        </html>
-    )
-}
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanchonete do Abner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-background text-foreground">
+    <header class="bg-red-600 text-white text-3xl p-4 text-center">LANCHONETE DO ABNER</header>
+
+    <div class="flex">
+      <aside class="bg-red-500 text-white w-1/4 p-4">
+        <p>Fale conosco - (81)91234-5678 📱</p>
+        <nav class="mt-4">
+          <a href="#" class="block py-2 border-b border-zinc-300">Carrinho de compras</a>
+          <a href="#" class="block py-2">Pedidos</a>
+        </nav>
+        <p class="mt-4">Rua das Flores, 123 - Centro, Cidade</p>
+      </aside>
+
+      <main class="bg-yellow-200 flex-1 p-4 grid grid-cols-2 gap-4">
+        <div class="border border-zinc-300 p-2 text-center">
+          <img src="https://placehold.co/200x150.png?text=Hamburguer" alt="Hamburguer" />
+          <p>Hamburguer - R$ 10,00</p>
+          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+        </div>
+        <div class="border border-zinc-300 p-2 text-center">
+          <img src="https://placehold.co/200x150.png?text=Sopa+de+Feijao" alt="Sopa de Feijão" />
+          <p>Sopa de Feijão - R$ 8,00</p>
+          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+        </div>
+        <div class="border border-zinc-300 p-2 text-center">
+          <img src="https://placehold.co/200x150.png?text=Coxinha" alt="Coxinha" />
+          <p>Coxinha - R$ 5,00</p>
+          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+        </div>
+        <div class="border border-zinc-300 p-2 text-center">
+          <img src="https://placehold.co/200x150.png?text=Refrigerante" alt="Refrigerante" />
+          <p>Refrigerante - R$ 5,00</p>
+          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
