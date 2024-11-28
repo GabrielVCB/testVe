@@ -1,44 +1,52 @@
 export default function Widget() {
     return (
-        
-        
-        <div className="bg-background p-4">
-          <h1 className="text-3xl font-bold text-red-600">Pedidos</h1>
-          <div className="mt-4 bg-yellow-200 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold">Meus pedidos</h2>
-            <div className="flex justify-between items-center mt-2">
-              <span>Hambúrguer - R$ 10,00</span>
-              <span>🛵 A caminho</span>
-            </div>
-            <div className="flex justify-between items-center mt-2">
-              <span>Refrigerante - R$ 5,00</span>
-            </div>
-            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Lanchonete do Abner</title>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        <body className="bg-background text-foreground">
+          <header className="bg-red-600 text-white text-3xl p-4 text-center">
+            LANCHONETE DO ABNER
+          </header>
+          
+          <div className="flex">
+            <aside className="bg-red-500 text-white w-1/4 p-4">
+              <p>Fale conosco - (81)91234-5678 📱</p>
+              <nav className="mt-4">
+                <a href="#" className="block py-2 border-b border-zinc-300">Carrinho de compras</a>
+                <a href="#" className="block py-2">Pedidos</a>
+              </nav>
+              <p className="mt-4">Rua das Flores, 123 - Centro, Cidade</p>
+            </aside>
+            
+            <main className="bg-yellow-200 flex-1 p-4 grid grid-cols-2 gap-4">
+              <div className="border border-zinc-300 p-2 text-center">
+                <img src="https://placehold.co/200x150.png?text=Hamburguer" alt="Hamburguer">
+                <p>Hamburguer - R$ 10,00</p>
+                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+              </div>
+              <div className="border border-zinc-300 p-2 text-center">
+                <img src="https://placehold.co/200x150.png?text=Sopa+de+Feijao" alt="Sopa de Feijão">
+                <p>Sopa de Feijão - R$ 8,00</p>
+                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+              </div>
+              <div className="border border-zinc-300 p-2 text-center">
+                <img src="https://placehold.co/200x150.png?text=Coxinha" alt="Coxinha">
+                <p>Coxinha - R$ 5,00</p>
+                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+              </div>
+              <div className="border border-zinc-300 p-2 text-center">
+                <img src="https://placehold.co/200x150.png?text=Refrigerante" alt="Refrigerante">
+                <p>Refrigerante - R$ 5,00</p>
+                <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
+              </div>
+            </main>
           </div>
-          <div className="mt-4 bg-yellow-200 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold">Histórico</h2>
-            <div className="flex justify-between items-center mt-2">
-              <span>Coxinha - R$ 5,00</span>
-              <span>✔️ Entregue</span>
-            </div>
-            <div className="flex justify-between items-center mt-2">
-              <span>Suco - R$ 4,00</span>
-            </div>
-            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
-        
-            <div className="flex justify-between items-center mt-4">
-              <span>Sopa de feijão - R$ 8,00</span>
-              <span>✔️ Entregue</span>
-            </div>
-            <div className="flex justify-between items-center mt-2"></div>
-            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
-          </div>
-          <div className="mt-4 text-right">
-            <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded">Ver mais</button>
-          </div>
-        </div>
-        
-        
-        
+        </body>
+        </html>
     )
 }
