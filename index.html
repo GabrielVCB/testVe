@@ -1,38 +1,44 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio da Lanchonete</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
-    <header>
-        <h1>Lanchonete Sabor Gourmet</h1>
-    </header>
-    
-    <main>
-        <section class="menu">
-            <h2>Nosso Cardápio</h2>
-
-            <div class="item">
-                <h3>Hambúrguer</h3>
-                <img src="https://bit.ly/3VdGXEK" alt="Hambúrguer suculento">
-                <p>Um hambúrguer artesanal com carne 100% bovina, queijo, alface e tomate.</p>
-                <p><strong>Preço:</strong> R$ 15,00</p>
+export default function Widget() {
+    return (
+        
+        
+        <div className="bg-background p-4">
+          <h1 className="text-3xl font-bold text-red-600">Pedidos</h1>
+          <div className="mt-4 bg-yellow-200 p-4 rounded-lg">
+            <h2 className="text-xl font-semibold">Meus pedidos</h2>
+            <div className="flex justify-between items-center mt-2">
+              <span>Hambúrguer - R$ 10,00</span>
+              <span>🛵 A caminho</span>
             </div>
-
-            <div class="item">
-                <h3>Coxinha</h3>
-                <img src="https://bit.ly/3Zs4rsy" alt="Coxinha de frango com requeijão">
-                <p>A famosa coxinha recheada com frango e requeijão cremoso.</p>
-                <p><strong>Preço:</strong> R$ 5,00</p>
+            <div className="flex justify-between items-center mt-2">
+              <span>Refrigerante - R$ 5,00</span>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Lanchonete Sabor Gourmet - Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
+          </div>
+          <div className="mt-4 bg-yellow-200 p-4 rounded-lg">
+            <h2 className="text-xl font-semibold">Histórico</h2>
+            <div className="flex justify-between items-center mt-2">
+              <span>Coxinha - R$ 5,00</span>
+              <span>✔️ Entregue</span>
+            </div>
+            <div className="flex justify-between items-center mt-2">
+              <span>Suco - R$ 4,00</span>
+            </div>
+            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
+        
+            <div className="flex justify-between items-center mt-4">
+              <span>Sopa de feijão - R$ 8,00</span>
+              <span>✔️ Entregue</span>
+            </div>
+            <div className="flex justify-between items-center mt-2"></div>
+            <div className="mt-2 font-bold">TOTAL: R$ 15,00</div>
+          </div>
+          <div className="mt-4 text-right">
+            <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded">Ver mais</button>
+          </div>
+        </div>
+        
+        
+        
+    )
+}
