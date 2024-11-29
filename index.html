@@ -1,110 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-  <script>
-    // Configuração do Tailwind
-    tailwind.config = {
-      darkMode: ['class'],
-      theme: {
-        extend: {
-          colors: {
-            background: 'hsl(var(--background))',
-            foreground: 'hsl(var(--foreground))',
-            primary: {
-              DEFAULT: 'hsl(var(--primary))',
-              foreground: 'hsl(var(--primary-foreground))',
-            },
-            secondary: {
-              DEFAULT: 'hsl(var(--secondary))',
-              foreground: 'hsl(var(--secondary-foreground))',
-            },
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    @layer base {
-      :root {
-        --background: 0 0% 100%;
-        --foreground: 240 10% 3.9%;
-        --primary: 240 5.9% 10%;
-        --primary-foreground: 0 0% 98%;
-        --secondary: 240 4.8% 95.9%;
-        --secondary-foreground: 240 5.9% 10%;
-      }
-      .dark {
-        --background: 240 10% 3.9%;
-        --foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
-        --secondary: 240 3.7% 15.9%;
-        --secondary-foreground: 0 0% 98%;
-      }
-    }
-  </style>
-</head>
-<body class="bg-background text-foreground">
-  <!-- Header -->
-  <header class="bg-primary text-primary-foreground text-center p-4">
-    <h1 class="text-2xl font-bold">LANCHONETE DO ABNER</h1>
-    <p class="text-sm">Os melhores lanches feitos com carinho!</p>
-  </header>
-
-  <!-- Main Content -->
-  <main class="p-6">
-    <!-- Menu Section -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Nosso Cardápio</h2>
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <li class="border border-secondary p-4 rounded">
-          <h3 class="text-lg font-medium">Hambúrguer Clássico</h3>
-          <p class="text-secondary text-sm">Pão, carne, queijo, alface e tomate.</p>
-          <p class="text-primary font-bold mt-2">R$ 25,00</p>
-        </li>
-        <li class="border border-secondary p-4 rounded">
-          <h3 class="text-lg font-medium">Cheeseburger Especial</h3>
-          <p class="text-secondary text-sm">Pão, carne, queijo extra, bacon e molho especial.</p>
-          <p class="text-primary font-bold mt-2">R$ 30,00</p>
-        </li>
-        <li class="border border-secondary p-4 rounded">
-          <h3 class="text-lg font-medium">Combo Família</h3>
-          <p class="text-secondary text-sm">Dois hambúrgueres, duas batatas fritas e refrigerantes.</p>
-          <p class="text-primary font-bold mt-2">R$ 60,00</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Entre em Contato</h2>
-      <form class="space-y-4">
-        <div>
-          <label for="name" class="block text-sm font-medium">Seu Nome</label>
-          <input id="name" type="text" class="block w-full p-2 border border-secondary rounded" placeholder="Digite seu nome">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanchonete do Abner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">LANCHONETE DO ABNER</header>
+    <div class="container">
+      <aside class="sidebar">
+        <p>Fale conosco - (81)91234-5678 📱</p>
+        <nav class="navigation">
+          <a href="#" class="nav-item">Carrinho de compras</a>
+          <a href="#" class="nav-item">Pedidos</a>
+        </nav>
+        <p class="address">Rua das Flores, 123 - Centro, Cidade</p>
+      </aside>
+      <main class="main-content">
+        <div class="product">
+          <img src="https://placehold.co/200x150.png?text=Hamburguer" alt="Hamburguer" />
+          <p>Hamburguer - R$ 10,00</p>
+          <button class="add-button">+ Adicionar</button>
         </div>
-        <div>
-          <label for="email" class="block text-sm font-medium">Seu Email</label>
-          <input id="email" type="email" class="block w-full p-2 border border-secondary rounded" placeholder="Digite seu email">
+        <div class="product">
+          <img src="https://placehold.co/200x150.png?text=Sopa+de+Feijao" alt="Sopa de Feijão" />
+          <p>Sopa de Feijão - R$ 8,00</p>
+          <button class="add-button">+ Adicionar</button>
         </div>
-        <div>
-          <label for="message" class="block text-sm font-medium">Mensagem</label>
-          <textarea id="message" class="block w-full p-2 border border-secondary rounded" rows="4" placeholder="Escreva sua mensagem"></textarea>
+        <div class="product">
+          <img src="https://placehold.co/200x150.png?text=Coxinha" alt="Coxinha" />
+          <p>Coxinha - R$ 5,00</p>
+          <button class="add-button">+ Adicionar</button>
         </div>
-        <button type="submit" class="bg-secondary text-secondary-foreground py-2 px-4 rounded hover:bg-secondary/80">
-          Enviar Mensagem
-        </button>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-primary text-primary-foreground text-center p-4">
-    <p class="text-sm">&copy; 2024 Lanchonete do Abner. Todos os direitos reservados.</p>
-    <p class="text-xs">Siga-nos nas redes sociais: Instagram | Facebook | Twitter</p>
-  </footer>
-</body>
+        <div class="product">
+          <img src="https://placehold.co/200x150.png?text=Refrigerante" alt="Refrigerante" />
+          <p>Refrigerante - R$ 5,00</p>
+          <button class="add-button">+ Adicionar</button>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 Lanchonete do Abner. Todos os direitos reservados.</p>
+      <p>Rua das Flores, 123 - Centro, Cidade</p>
+    </footer>
+  </body>
 </html>
