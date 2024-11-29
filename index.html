@@ -1,46 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lanchonete do Abner</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="bg-background text-foreground">
-    <header class="bg-red-600 text-white text-3xl p-4 text-center">LANCHONETE DO ABNER</header>
-
-    <div class="flex">
-      <aside class="bg-red-500 text-white w-1/4 p-4">
-        <p>Fale conosco - (81)91234-5678 📱</p>
-        <nav class="mt-4">
-          <a href="#" class="block py-2 border-b border-zinc-300">Carrinho de compras</a>
-          <a href="#" class="block py-2">Pedidos</a>
-        </nav>
-        <p class="mt-4">Rua das Flores, 123 - Centro, Cidade</p>
-      </aside>
-
-      <main class="bg-yellow-200 flex-1 p-4 grid grid-cols-2 gap-4">
-        <div class="border border-zinc-300 p-2 text-center">
-          <img src="https://placehold.co/200x150.png?text=Hamburguer" alt="Hamburguer" />
-          <p>Hamburguer - R$ 10,00</p>
-          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-        </div>
-        <div class="border border-zinc-300 p-2 text-center">
-          <img src="https://placehold.co/200x150.png?text=Sopa+de+Feijao" alt="Sopa de Feijão" />
-          <p>Sopa de Feijão - R$ 8,00</p>
-          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-        </div>
-        <div class="border border-zinc-300 p-2 text-center">
-          <img src="https://placehold.co/200x150.png?text=Coxinha" alt="Coxinha" />
-          <p>Coxinha - R$ 5,00</p>
-          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-        </div>
-        <div class="border border-zinc-300 p-2 text-center">
-          <img src="https://placehold.co/200x150.png?text=Refrigerante" alt="Refrigerante" />
-          <p>Refrigerante - R$ 5,00</p>
-          <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-1 rounded">+ Adicionar</button>
-        </div>
-      </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    // Configuração do Tailwind
+    tailwind.config = {
+      darkMode: ['class'],
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: {
+              DEFAULT: 'hsl(var(--primary))',
+              foreground: 'hsl(var(--primary-foreground))',
+            },
+            secondary: {
+              DEFAULT: 'hsl(var(--secondary))',
+              foreground: 'hsl(var(--secondary-foreground))',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    @layer base {
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+      }
+      .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground">
+  <header class="bg-primary text-primary-foreground text-center p-4">
+    LANCHONETE DO ABNER
+  </header>
+  <main class="flex flex-col items-center p-4">
+    <div class="border border-secondary p-4 rounded">
+      <p class="text-secondary">Bem-vindo à nossa lanchonete!</p>
+      <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">
+        Faça seu pedido
+      </button>
     </div>
-  </body>
+  </main>
+  <footer class="bg-primary text-primary-foreground text-center p-4">
+    &copy; 2024 Lanchonete do Abner. Todos os direitos reservados.
+  </footer>
+</body>
 </html>
