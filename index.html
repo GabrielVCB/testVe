@@ -48,19 +48,63 @@
   </style>
 </head>
 <body class="bg-background text-foreground">
+  <!-- Header -->
   <header class="bg-primary text-primary-foreground text-center p-4">
-    LANCHONETE DO ABNER
+    <h1 class="text-2xl font-bold">LANCHONETE DO ABNER</h1>
+    <p class="text-sm">Os melhores lanches feitos com carinho!</p>
   </header>
-  <main class="flex flex-col items-center p-4">
-    <div class="border border-secondary p-4 rounded">
-      <p class="text-secondary">Bem-vindo à nossa lanchonete!</p>
-      <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 py-2 px-4 rounded">
-        Faça seu pedido
-      </button>
-    </div>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <!-- Menu Section -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Nosso Cardápio</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <li class="border border-secondary p-4 rounded">
+          <h3 class="text-lg font-medium">Hambúrguer Clássico</h3>
+          <p class="text-secondary text-sm">Pão, carne, queijo, alface e tomate.</p>
+          <p class="text-primary font-bold mt-2">R$ 25,00</p>
+        </li>
+        <li class="border border-secondary p-4 rounded">
+          <h3 class="text-lg font-medium">Cheeseburger Especial</h3>
+          <p class="text-secondary text-sm">Pão, carne, queijo extra, bacon e molho especial.</p>
+          <p class="text-primary font-bold mt-2">R$ 30,00</p>
+        </li>
+        <li class="border border-secondary p-4 rounded">
+          <h3 class="text-lg font-medium">Combo Família</h3>
+          <p class="text-secondary text-sm">Dois hambúrgueres, duas batatas fritas e refrigerantes.</p>
+          <p class="text-primary font-bold mt-2">R$ 60,00</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Entre em Contato</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium">Seu Nome</label>
+          <input id="name" type="text" class="block w-full p-2 border border-secondary rounded" placeholder="Digite seu nome">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Seu Email</label>
+          <input id="email" type="email" class="block w-full p-2 border border-secondary rounded" placeholder="Digite seu email">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium">Mensagem</label>
+          <textarea id="message" class="block w-full p-2 border border-secondary rounded" rows="4" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="bg-secondary text-secondary-foreground py-2 px-4 rounded hover:bg-secondary/80">
+          Enviar Mensagem
+        </button>
+      </form>
+    </section>
   </main>
+
+  <!-- Footer -->
   <footer class="bg-primary text-primary-foreground text-center p-4">
-    &copy; 2024 Lanchonete do Abner. Todos os direitos reservados.
+    <p class="text-sm">&copy; 2024 Lanchonete do Abner. Todos os direitos reservados.</p>
+    <p class="text-xs">Siga-nos nas redes sociais: Instagram | Facebook | Twitter</p>
   </footer>
 </body>
 </html>
